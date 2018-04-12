@@ -17,5 +17,5 @@ def move_relay(action):
         return json.dumps({'success':True}), 200, {'ContentType':'application/json'}
 
 @app.teardown_appcontext
-def clear():
+def clear(err):
     print('lala')
