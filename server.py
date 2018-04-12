@@ -18,4 +18,4 @@ def move_relay(action):
 
 @app.teardown_appcontext
 def clear(err):
-    print('lala')
+    print(err)
