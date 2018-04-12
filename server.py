@@ -15,3 +15,7 @@ def move_relay(action):
     else:
         GPIO.output(22, GPIO.LOW)
         return json.dumps({'success':True}), 200, {'ContentType':'application/json'}
+
+@app.teardown_appcontext
+def clear():
+    print('lala')
